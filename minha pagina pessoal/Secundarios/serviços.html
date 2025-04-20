@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serviços - Desenvolvimento de Sites</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 4em 0;
+    }
+
+    section {
+      padding: 20px;
+      margin: 10px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .foto {
+      width: 200px;
+      border-radius: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .ooo {
+      position: absolute;
+      left: 100px;
+      top: 35px;
+      border-radius: 25px;
+      width: 110px;
+    }
+
+    .eu {
+      border-radius: 15px;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Serviços de Desenvolvimento de Sites</h1>
+  </header>
+
+  <section>
+    <h2>Tipos de Sites Desenvolvidos</h2>
+    <ul>
+      <li>Restaurante</li>
+      <li>Academia</li>
+      <li>Livraria</li>
+      <li>Cafeteria</li>
+      <li>Escolinha de futebol</li>
+      <li>Escolinha de vôlei</li>
+      <!-- Adicione outros tipos conforme necessário -->
+    </ul>
+  </section>
+
+  <section>
+    <h2>Valores</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tipo de Site</th>
+          <th>Quantidade de Páginas</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estático (HTML e CSS)</td>
+          <td>1 a 2 páginas</td>
+          <td>R$ 150,00</td>
+        </tr>
+        <tr>
+          <td>Estático (HTML e CSS)</td>
+          <td>3 a 5 páginas</td>
+          <td>R$ 300,00</td>
+        </tr>
+        <tr>
+          <td>Estático (HTML e CSS)</td>
+          <td>Mais de 5 páginas</td>
+          <td>R$ 500,00</td>
+        </tr>
+        <tr>
+          <td>Dinâmico</td>
+          <td>Personalizado</td>
+          <td>R$ 700,00</td>
+        </tr>
+        <tr>
+          <td>Avançado</td>
+          <td>Com funcionalidades extras</td>
+          <td>R$ 1.200,00</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Solicite seu Serviço</h2>
+    <form action="contato.html" method="get">
+      <label for="nome">Nome Completo:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="tipo-servico">Tipo de Serviço:</label><br>
+      <select id="tipo-servico" name="tipo-servico">
+        <option value="estatico">Site Estático</option>
+        <option value="dinamico">Site Dinâmico</option>
+        <option value="avancado">Site Avançado</option>
+      </select><br><br>
+
+      <label for="descricao">Descrição do que você precisa:</label><br>
+      <textarea id="descricao" name="descricao" rows="4" cols="50" placeholder="Descreva sua ideia de site..."></textarea><br><br>
+
+      <button type="submit">Enviar Solicitação</button>
+    </form>
+  </section>
+  <a href="../pagina principal/index.html">Volte aqui para página principal</a>
+
+  <section>
+   
+
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
