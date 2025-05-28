@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-section">
+        <div class= "container">
+         <div id="nascimento" class="logo">
+            <h1>Calculadora de Idade</h1>
+         </div>
+
+        </div>
+        <span>Data de nascimento:</span>
+        <input class="dia" id="dia" type="number" max="31">
+        <select class="mes" id="mes">
+        <option value="01">Janeiro</option>
+        <option value="02">Fevereiro</option>
+        <option value="03">Março</option>
+        <option value="04">Abril</option>
+        <option value="05">Maio</option>
+        <option value="06">Junho</option>
+        <option value="07">Julho</option>
+        <option value="08">Agosto</option>
+        <option value="09">Setembro</option>
+        <option value="10">Outubro</option>
+        <option value="11">Novembro</option>
+        <option value="12">Dezembro</option>
+        </select>
+        <input class="ano" id="ano" type="number">
+        <button class="botao" onclick="calculaidade()">Calcula Idade</button>
+        <div>
+            <label id="resultado">Idade</label>
+        </div>
+    </main>
+    <div class="container">
+        <div id="calculadora" class="logo">
+            <h1>Calculadora</h1>
+    </div>
+    </div>
+    <input type="number" id="n1">
+    <select id="operacao"> 
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="n2">
+    <button class="botao" onclick="calcular()">Calcula</button>
+    <div>
+        <label id="resultadocalc">Resultado</label>
+    </div>
+        <script>
+        document.getElementById("nascimento").style.backgroundImage = "('nascimento.jpeg')";
+        document.getElementById("calculadora").style.backgroundImage = "('operacoes.jpeg')";
+
+function calculaidade() {
+    const hoje= new Date ();
+   const dia = Number(document.getElementById("dia").value);
+   const mes = Number (document.getElementById("mes").value) - 1;
+   const ano = Number (document.getElemetByid("ano").value);
+   if (dia <=0 || dia > 31 || ano <=0){
+    alert("Digite uma data de nascimetno válida");
+    return;
+   }
+   hoje.getFullYear()
+   const idade = hoje.getFullYear() - ano;
+alert(idade)
+}
+</script>
+</body>
+</html>
+ 
